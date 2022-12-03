@@ -12,3 +12,29 @@ color: white;
 
     margin: 0 20%;
   }
+  td,th {
+
+   width: 15%;
+  }
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  .delete {
+    cursor:pointer;
+    color: red
+  }
+  .edit {
+    cursor:pointer;
+    color: blue
+  }
+  
+  .search {
+    cursor:pointer;
+    color: yellowgreen
+  }
+
+  .agregar {
+    font-size: 10px;
+    line-height: 28px;
+  }
