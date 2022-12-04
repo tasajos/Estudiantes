@@ -1,8 +1,11 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { config } from 'rxjs';
 import { estudiante } from 'src/app/Interfaces/estudiante';
+
 
 
 const ListEstudiante: estudiante[] = [
@@ -20,6 +23,8 @@ export class ListadoEstudianteComponent implements AfterViewInit{
   displayedColumns: string[] = ['nombre','apellido','curso','telefono','edad','acciones' ];
   dataSource = new MatTableDataSource<estudiante>(ListEstudiante);
   
+  constructor(private _snackBar: MatSnackBar) {}
+
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   
@@ -31,5 +36,12 @@ export class ListadoEstudianteComponent implements AfterViewInit{
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+  eliminarestudiante() {
+    this._snackBar.open("El estudiante fue eliminiado con exito","",{
+duration:2000,
+horizontalPosition:'right'
+    } )
+
   }
 }
