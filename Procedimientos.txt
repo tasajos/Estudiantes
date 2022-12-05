@@ -1,0 +1,9 @@
+Procedimientos CRUD
+
+-Prerequisitos
+1. Node JS
+2. Angular
+3. Visual Code
+4. visual Studio
+5. Github
+6. Sql Express (SMSS)
