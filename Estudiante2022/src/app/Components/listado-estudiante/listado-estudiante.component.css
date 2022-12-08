@@ -7,8 +7,6 @@ background-color: #666;
 text-align: center;
 color: white;
   }
-
-
   td,th {
 
    width: 15%;
@@ -25,12 +23,10 @@ color: white;
     cursor:pointer;
     color: blue
   }
-  
   .search {
     cursor:pointer;
     color: yellowgreen
   }
-
   .agregar {
     font-size: 10px;
     line-height: 28px;
