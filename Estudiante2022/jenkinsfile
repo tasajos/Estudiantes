@@ -18,6 +18,7 @@ stages {
     {
 steps{
 git 'https://github.com/tasajos/Estudiantes.git'
+bat 'npm install'
 //echo 'test jenkins'
 }
     }
