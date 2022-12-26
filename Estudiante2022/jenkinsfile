@@ -17,8 +17,8 @@ stages {
     stage('install')
     {
 steps{
-git 'https://github.com/tasajos/Estudiantes.git'
-bat echo 'test jenkins'
+//git 'https://github.com/tasajos/Estudiantes.git'
+echo 'test jenkins'
 }
     }
 }
