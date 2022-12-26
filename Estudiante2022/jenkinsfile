@@ -18,7 +18,7 @@ stages {
     {
 steps{
 git 'https://github.com/tasajos/Estudiantes.git'
-echo 'test jenkins'
+bat echo 'test jenkins'
 }
     }
 }
