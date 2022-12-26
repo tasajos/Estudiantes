@@ -13,6 +13,7 @@ import { AgregarModificarEstudianteComponent } from './Components/agregar-modifi
 import { ListadoEstudianteComponent } from './Components/listado-estudiante/listado-estudiante.component';
 import { VerEstudianteComponent } from './Components/ver-estudiante/ver-estudiante.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FrontComponent } from './Components/front/front.component';
 
 
 
@@ -22,7 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     AgregarModificarEstudianteComponent,
     ListadoEstudianteComponent,
-    VerEstudianteComponent
+    VerEstudianteComponent,
+    FrontComponent
   ],
   imports: [
     BrowserModule,
