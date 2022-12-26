@@ -18,7 +18,9 @@ stages {
     {
 steps{
 git 'https://github.com/tasajos/Estudiantes.git'
-install git-bash
+dir('/scr') {
+    // some block
+}
 //echo 'test jenkins'
 }
     }
